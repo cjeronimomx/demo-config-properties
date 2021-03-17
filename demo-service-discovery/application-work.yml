@@ -1,0 +1,18 @@
+#TODO: 1.1 Add demo-service-discovery folder
+#TODO: 1.2 Add application-work-yml file into demo-service-discovery folder
+#TODO: 2. Add Eureka properties configuration
+#TODO: 6. Push this changes to git repository 
+#TODO: 7. Reestart config server then start service discovery
+#TODO: 8. Restart each microservice
+eureka:
+  instance:
+    preferIpAddress: true
+    status-page-url-path: ${server.servlet.context-path}/actuator/info
+    health-check-url-path: ${server.servlet.context-path}/actuator/health
+    hostname: 127.0.0.1
+  client:
+    healthcheck: true
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}${server.servlet.context-path}/eureka
