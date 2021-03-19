@@ -36,7 +36,6 @@ feign:
 management:
   endpoints:
     web:
-      base-path: /demo
       exposure:
         include: "*"
 
