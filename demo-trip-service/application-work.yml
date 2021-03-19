@@ -27,3 +27,8 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:4060/demo/discovery/eureka
 
+
+
+feign:
+  hystrix:
+    enabled: true
