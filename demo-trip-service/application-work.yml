@@ -35,7 +35,7 @@ feign:
 
 hystrix:
   dashboard:
-    proxy-stream-allow-list: "*"
+    proxy-stream-allow-list: "http://127.0.0.1:4042/demo/actuator/hystrix.stream" # "*"
 
 management:
   endpoints:
