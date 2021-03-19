@@ -37,6 +37,7 @@ management:
   context-path: /demo
   endpoints:
     web:
+      base-path: /demo/actuator/
       exposure:
         include: "*"
 
