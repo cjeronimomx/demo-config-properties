@@ -36,7 +36,7 @@ feign:
 management:
   endpoints:
     web:
-      base-path: /
+      base-path: /demo/
       exposure:
         include: hystrix.stream
 
