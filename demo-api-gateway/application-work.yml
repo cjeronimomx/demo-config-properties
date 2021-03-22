@@ -20,12 +20,12 @@ spring:
       - id: driver-service
         uri: lb://demo-driver-service
         predicates:
-        - path=/drivers/**
+        - Path=/drivers/**
       - id: passenger-service
         uri: lb://demo-passenger-service
         predicates:
-        - path=/passengers/**
+        - Path=/passengers/**
       - id: trip-service
         uri: lb://demo-trip-service
         predicates:
-        - path=/trips/**
+        - Path=/trips/**
