@@ -6,15 +6,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:4060/demo/discovery/eureka
-
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: driver-service
-        uri: lb://demo-driver-service
-        predicates:
-          - path=/drivers/**
