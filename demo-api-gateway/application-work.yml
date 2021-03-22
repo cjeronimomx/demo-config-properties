@@ -7,14 +7,25 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:4060/demo/discovery/eureka
 
+# https://docs.spring.io/spring-cloud-gateway/docs/current/reference/html/appendix.html
 spring:
   cloud:
     gateway:
+      enabled: true
       discovery:
         locator:
           enabled: true
+          ower-case-service-id: true
       routes:
       - id: driver-service
         uri: lb://demo-driver-service
         predicates:
         - path=/drivers/**
+      - id: passenger-service
+        uri: lb://demo-passenger-service
+        predicates:
+        - path=/passengers/**
+      - id: trip-service
+        uri: lb://demo-trip-service
+        predicates:
+        - path=/trips/**
