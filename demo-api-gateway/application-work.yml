@@ -14,7 +14,7 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: driver-service
-          uri: lb://demo-driver-service
+      - id: driver-service
+        uri: lb://demo-driver-service
         predicates:
-          - path=/drivers/**
+        - path=/drivers/**
