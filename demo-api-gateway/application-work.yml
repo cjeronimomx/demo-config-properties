@@ -15,7 +15,7 @@ spring:
       discovery:
         locator:
           enabled: true
-          ower-case-service-id: true
+          lower-case-service-id: true
       routes:
       - id: driver-service
         uri: lb://demo-driver-service
