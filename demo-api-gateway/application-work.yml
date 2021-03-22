@@ -6,3 +6,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:4060/demo/discovery/eureka
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
