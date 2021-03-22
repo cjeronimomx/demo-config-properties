@@ -13,3 +13,8 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: driver-service
+          uri: lb://demo-driver-service
+        predicates:
+          - path=/drivers/**
