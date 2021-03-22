@@ -17,7 +17,6 @@ spring:
     console:
       enabled: true
 
-#TODO: 4. Add Eureka properties configuration for passenger-service
 eureka:
   instance:
     prefer-ip-address: true

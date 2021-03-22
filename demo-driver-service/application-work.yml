@@ -17,7 +17,6 @@ spring:
     console:
       enabled: true
 
-#TODO: 3. Add Eureka properties configuration for driver-service
 eureka:
   instance:
     prefer-ip-address: true
