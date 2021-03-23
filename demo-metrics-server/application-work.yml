@@ -1,0 +1,8 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+    status-page-url-path: ${server.servlet.context-path}/actuator/info
+    health-check-url-path: ${server.servlet.context-path}/actuator/health
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:4060/demo/discovery/eureka
