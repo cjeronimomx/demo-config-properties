@@ -26,3 +26,9 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:4060/demo/discovery/eureka
 
+#TODO: 1.1 Add this properties for configuring actuator metrics and push to git repository
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -30,6 +30,7 @@ feign:
   hystrix:
     enabled: true
 
+#TODO: 1.3 Add this properties for configuring actuator metrics and push to git repository
 management:
   endpoints:
     web:
