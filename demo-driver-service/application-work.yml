@@ -40,7 +40,7 @@ management:
 info:
   app:
     name: Demo Driver Service
-    description: Microservice to manage driver operations
+    description: Business Microservice to manage drivers operations
     version: 1.0.0
     java:
       source: 1.8
