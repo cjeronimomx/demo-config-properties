@@ -22,13 +22,27 @@ eureka:
     prefer-ip-address: true
     status-page-url-path: ${server.servlet.context-path}/actuator/info
     health-check-url-path: ${server.servlet.context-path}/actuator/health
+    #TODO: 1.2 Add this properties to configure actuator base-path in eureka
+    metadata-map:
+      management.context-path: /demo/actuator
   client:
     service-url:
       defaultZone: http://127.0.0.1:4060/demo/discovery/eureka
 
-#TODO: 1.1 Add this properties for configuring actuator metrics and push to git repository
+#TODO: 1.1 Add this properties for configuring actuator paths
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+#TODO: 1.3 Add this properties to configure Info for actuator/info
+info:
+  app:
+    name: Demo Driver Service
+    description: Microservice to manage driver operations
+    version: 1.0.0
+    java:
+      source: 1.8
+  tags:
+    environment: work
